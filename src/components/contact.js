@@ -2,7 +2,6 @@ import React from "react";
 import SectionTitle from "./sectiontitle";
 import { StaticQuery, graphql } from "gatsby";
 import { PaperPlane, Mapmarker, Mobile, Envelope, Loading } from "./icons";
-import SocialLinks from "./sociallinks";
 import "../style/contact.less";
 
 class Contact extends React.Component {
@@ -268,9 +267,6 @@ class Contact extends React.Component {
                                     {this.props.contact.address}
                                 </li>
                             )}
-                            <li>
-                                <SocialLinks />
-                            </li>
                         </ul>
                     </div>
                 </div>

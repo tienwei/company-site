@@ -2,9 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import SEO from "../components/seo";
-import SocialLinks from "../components/sociallinks";
-import PortfolioList from "../components/list-portfolio";
-import BlogList from "../components/list-blog";
 import Contact from "../components/contact";
 import "../style/wall.less";
 
@@ -132,16 +129,11 @@ class IndexPage extends React.Component {
                         <p className="caption text-tertiary">
                             {this.props.data.site.siteMetadata.description}
                         </p>
-                        <a href="#portfolio" className="btn">
-                            SEE WORKS
+                        <a href="/how-we-work" className="btn">
+                            SEE HOW WE WORK
                         </a>
                     </div>
-                    <div className="social-buttons">
-                        <SocialLinks />
-                    </div>
                 </div>
-                <PortfolioList />
-                <BlogList />
                 <Contact />
             </Layout>
         );
@@ -159,11 +151,6 @@ export const query = graphql`
                 titleImage
                 introTag
                 description
-                social {
-                    name
-                    url
-                    icon
-                }
             }
         }
     }

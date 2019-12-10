@@ -6,6 +6,7 @@ import FooterLinks from "./footer-links";
 import "../style/footer.less";
 
 export default function() {
+    const parentComp = "The Winning Fellows Pty. Ltd.";
     const query = useStaticQuery(graphql`
         query {
             site {
@@ -37,6 +38,7 @@ export default function() {
                     Copyright &copy; {query.site.siteMetadata.title}{" "}
                     {new Date().getFullYear()}
                 </p>
+                <p>Trading as {parentComp}</p>
             </div>
         </footer>
     );
