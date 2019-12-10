@@ -36,8 +36,8 @@ opportunity to come to life!`,
         api_url: "",
         description: `We are so glad you found us. Thank you! You can reach us via the follows:`,
         mail: "thewinningfellows@gmail.com",
-        phone: "(02) 9785-4030",
-        address: "192A Freemans Drive \nMorisset NSW  \n Australia 2264"
+        phone: "(02) 9785-4037",
+        address: "192 Freemans Drive \nMorisset NSW  \n Australia 2264"
     }
 };
 
